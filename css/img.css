@@ -1,0 +1,120 @@
+
+/*    Image    */
+
+.hero {
+	background: url('../images/index.jpg') no-repeat;
+	background-size: cover;
+	height: 1024px;
+}
+
+.hero .caption{
+	margin-top: 175px;
+}
+
+.hero .caption h1.mean_cap {
+	font-family: 'Montserrat'; 
+	font-size: 150px;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 70px;
+	text-align: center;
+	-webkit-transition-duration: 0.5s;
+	text-shadow: #c8c8c8 1px 1px 0px, #b4b4b4 0px 2px 0px, #a0a0a0 0px 3px 0px, rgba(140, 140, 140, 0.498039) 0px 4px 0px, #787878 0px 0px 0px, rgba(0, 0, 0, 0.498039) 0px 5px 10px;
+}
+
+.hero .caption h2.sub_cap {
+	font-family: "FreeMono", monospace;
+	font-size: 45px;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 70px;
+	text-align: center;
+	-webkit-transition-duration: 0.8s;
+	text-shadow: #c8c8c8 1px 1px 0px,#b4b4b4 0px 2px 0px, #a0a0a0 0px 3px 0px, rgba(140, 140, 140, 0.498039) 0px 4px 0px, #787878 0px 0px 0px, rgba(0, 0, 0, 0.498039) 0px 5px 10px;
+}
+
+.hero .bienvenue .button {
+	display: inline-block;
+	border-radius: 4px;
+	border: none;
+	color: white;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	display: block;
+	margin : auto;
+}
+
+.hero .bienvenue .button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.hero .bienvenue .button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.hero .bienvenue .button:hover span {
+	padding-right: 25px;
+}
+
+.hero .bienvenue .button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.image {
+	margin: 25px 10px 10px 20px;
+	float: right;
+}
+
+/*     Diaporama Image     */
+
+@-webkit-keyframes AutoSlide {
+	0%, 15%, 100% {
+		left: 0px; /* première image et dernière*/
+	}
+	35%, 50% {
+		left: -150px; /*2ème image*/
+	}
+	70%, 85% {
+		left: -300px; /*3ème image*/
+	}
+}
+
+#slideshow {
+	position: relative;    /* le parent positionné */
+	width: 150px;          /* limite en largeur (1 élément du slideshow) */
+	height: 150px;         /* limite en hauteur */
+	margin:  20px auto;
+    overflow: hidden;      /* on cache ce qui déborde */
+    float: right;
+    margin: 15px;
+}
+#sContent li {
+	display: inline;      /* on aligne les éléments du slideshow */
+}
+#sContent {
+	position: absolute;   /* on sort l'élément du flux */
+	top: 0;               /* on le positionne précisément dans ... */
+	left: 0;              /* l'angle haut gauche de son parent positionné */
+	width: 450px;
+	margin: 0;            
+    padding: 0;
+
+    /*CSS3 webkit keyframes animation*/
+	-webkit-animation-name: AutoSlide;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-in-out;
+}

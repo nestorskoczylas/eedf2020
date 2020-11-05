@@ -1,0 +1,166 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+nav,
+section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+a{
+    color: #454545;
+    text-decoration: none;
+}
+
+.row{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0;
+    margin-bottom:0;
+    max-width:62.5rem;
+}
+
+.row:before,
+.row:after{
+    content:" ";
+    display:table;
+}
+
+.row:after{
+    clear:both;
+}
+
+.top-bar ul{
+    margin-bottom:0;
+    list-style:none;
+}
+
+.top-bar .name h1 a,
+.top-bar .name h2 a,
+.top-bar .name h3 a{
+    width:auto;
+}
+
+.top-bar-section ul li{
+    float:left ;
+}
+
+.row{
+	max-width:1400px;
+    display: block;
+    margin: auto;
+}
+
+
+/*    Header    */
+
+.logo h1{
+	text-decoration: none;
+	font-family: "lato-bold", Helvetica, Arial, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+header .logo{
+	margin: 50px 0 0 0;
+}
+
+header nav{
+	margin-top: 80px;
+}
+
+header .top-bar-section ul li a {
+    color: whitesmoke;
+    font-family: "raleway-regular", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 900;
+    padding: 0 15px;
+}
+
+/*     Menu déroulant       */
+
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-deroulant {
+/* on centre le menu dans la page */
+    text-align: center;
+}
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+	color:#000;
+}
+#menu-deroulant ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+#menu-deroulant li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
+}
+
+/*     Page     */
+
+.page{
+    padding: 140px 0;
+    margin: 0px 25px;
+}
+
+.page .sub_title{
+    color: #454545;
+	text-align: justify;
+	font-size: 22px;
+	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+	font-weight: lighter;
+}
+
+.title{
+    color: #454545;
+	text-align: justify;
+	font-size: 25px;
+	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+.min_title{
+    color: #454545;
+	text-align: justify;
+	font-size: 22px;
+	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-weight: bold;
+    text-indent: 30px;
+}
+
+.text:hover{
+    color : black;
+}
