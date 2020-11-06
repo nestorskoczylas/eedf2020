@@ -1,23 +1,24 @@
 html {
-  font-family: sans-serif;
+    font-family: sans-serif;
+    background-color: black;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 nav,
 section {
-  display: block;
+    display: block;
 }
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+    font-size: 2em;
+    margin: 0.67em 0;
 }
 
 a{
-    color: #454545;
+    color: white;
     text-decoration: none;
 }
 
@@ -41,7 +42,7 @@ a{
 }
 
 .top-bar ul{
-    margin-bottom:0;
+    margin-bottom: 30px;
     list-style:none;
 }
 
@@ -70,24 +71,31 @@ a{
 	font-size: 25px;
 	font-weight: bold;
 	text-transform: uppercase;
+    border: 5px solid red;
 }
 
-header .logo{
-	margin: 50px 0 0 0;
+.logo span {
+    text-decoration: none;
+    font-family: "lato-bold", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 20px;
+    border: 5px solid red;
 }
 
 header nav{
-	margin-top: 80px;
+	margin-top: 30px;
 }
 
 header .top-bar-section ul li a {
-    color: whitesmoke;
+    color: white;
     font-family: "raleway-regular", Helvetica, Arial, sans-serif;
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: .5px;
     font-weight: 900;
-    padding: 0 15px;
+    padding: 0 25px;
 }
 
 /*     Menu déroulant       */
@@ -112,7 +120,7 @@ header .top-bar-section ul li a {
 #menu-deroulant a {
     text-decoration: none;
     display: block;
-	color:#000;
+	color:white;
 }
 #menu-deroulant ul {
     position: absolute;
@@ -134,7 +142,7 @@ header .top-bar-section ul li a {
 }
 
 .page .sub_title{
-    color: #454545;
+    color: white;
 	text-align: justify;
 	font-size: 22px;
 	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
@@ -142,7 +150,7 @@ header .top-bar-section ul li a {
 }
 
 .title{
-    color: #454545;
+    color: white;
 	text-align: justify;
 	font-size: 25px;
 	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
@@ -152,7 +160,7 @@ header .top-bar-section ul li a {
 }
 
 .min_title{
-    color: #454545;
+    color: white;
 	text-align: justify;
 	font-size: 22px;
 	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
@@ -162,5 +170,5 @@ header .top-bar-section ul li a {
 }
 
 .text:hover{
-    color : black;
+    color : white;
 }
