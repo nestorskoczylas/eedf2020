@@ -68,86 +68,113 @@ a{
 .logo span {
     text-decoration: none;
     font-family: 'Montserrat';
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
     padding: 5px 10px;
-    border: 5px solid red;
+    background-color: #AED6F1;
+    border: 10px solid #AED6F1;
 }
 
 .container {
     width: auto;
-    padding: 10px;
+    padding: 0 10px 10px 0;
     display: flex;
     justify-content: space-between;
     margin-right: 150px;
 }
 
-header nav {
-    margin-top: 30px;
+li {
+    list-style: none;
+    margin-top: 15px;
 }
 
 header .top-bar-section ul li a {
     color: white;
-    font-family: 'Courier';
-    font-size: 15px;
+    font-family: 'Montserrat';
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: .5px;
-    font-weight: 900;
-    padding: 0 8px;
+    padding: 0 5px;
 }
 
 /*     Menu déroulant       */
 
 #menu-deroulant, #menu-deroulant ul {
     padding: 0;
-    margin: 0;
+    margin-top: 10px;
     list-style: none;
 }
-#menu-deroulant {
-/* on centre le menu dans la page */
-}
+
 #menu-deroulant li {
 /* on place les liens du menu horizontalement */
     display: inline-block;
     position: relative;
 }
+
 #menu-deroulant ul li {
 /* on enlève ce comportement pour les liens du sous menu */
     display: inherit;
 }
+
 #menu-deroulant a {
     text-decoration: none;
     display: block;
 	color: white;
-    width: 175px;
+    width: 100%;
+    margin: 0 25px;
     text-align: center;
-
 }
+
 #menu-deroulant ul {
     position: absolute;
 /* on cache les sous menus complètement sur la gauche */
     left: -999em;
 }
+
 #menu-deroulant li:hover ul {
 /* Au survol des li du menu on replace les sous menus */
     left: auto;
-    top: 50px;
+    top: 5px;
 }
+
+#menu-deroulant a:hover {
+    color: #21618C;
+    text-decoration: none;
+}
+
 
 /*     Page     */
 
+.corps {
+    padding-top: 60px;
+}
+
+.caption {
+    font-family: 'Montserrat';
+    font-size: 65px;
+    color: #CACFD2;
+    text-transform: uppercase;
+    line-height: 70px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+
 .page{
-    padding: 140px 0;
-    margin: 0px 25px;
+    padding: 50px 200px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .page .sub_title{
-    color: white;
+    color: #CACFD2;
 	text-align: justify;
-	font-size: 22px;
+	font-size: 28px;
 	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
 	font-weight: lighter;
+    line-height: 175%;
+    padding: 0 25px 10px 25px;
 }
 
 .title{
@@ -172,4 +199,160 @@ header .top-bar-section ul li a {
 
 .text:hover{
     color : white;
+}
+
+.button1 {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.page .luteaux {
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    color: #BDC3C7;
+    text-transform: uppercase;
+    border: 15px solid;
+    border-color: #BDC3C7 #D1CA41;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page .loutins {
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #BDC3C7;
+    text-transform: uppercase;
+}
+
+.boutton {
+    background-color: transparent;
+    color: #BDC3C7;
+    border: 2px solid #D1CA41;
+}
+
+.boutton:hover {
+    background-color: #D1CA41;
+    color: white;
+}
+
+.page .eclais {
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    color: #BDC3C7;
+    text-transform: uppercase;
+    border: 15px solid #27AE60;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page .eclai {
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #BDC3C7;
+    text-transform: uppercase;
+}
+
+.boutton1 {
+    background-color: transparent;
+    color: #BDC3C7;
+    border: 2px solid #27AE60;
+}
+
+.boutton1:hover {
+    background-color: #27AE60;
+    color: white;
+}
+
+.page .ainee {
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    color: #BDC3C7;
+    text-transform: uppercase;
+    border: 15px solid #C0392B;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page .aine {
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #BDC3C7;
+    text-transform: uppercase;
+}
+
+.boutton2 {
+    background-color: transparent;
+    color: #BDC3C7;
+    border: 2px solid #C0392B;
+}
+
+.boutton2:hover {
+    background-color: #C0392B;
+    color: white;
+}
+
+.page .equipe {
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    color: #BDC3C7;
+    text-transform: uppercase;
+    border: 15px solid #1F618D;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boutton3 {
+    background-color: transparent;
+    color: #BDC3C7;
+    border: 2px solid #1F618D;
+}
+
+.boutton3:hover {
+    background-color: #1F618D;
+    color: white;
 }
